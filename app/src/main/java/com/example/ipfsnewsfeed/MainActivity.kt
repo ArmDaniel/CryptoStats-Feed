@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
     fun fetchJson()
     {
 
-        //Use first URL to fetch top stories, then feed some 10 id's to the second url below (eg: 8863.json )
+        
 
         val url = " https://hacker-news.firebaseio.com/v0/item/8863.json?print=pretty"
 
