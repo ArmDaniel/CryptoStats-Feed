@@ -4,7 +4,8 @@
 This is not stable and far from being finished. Any testing can freely be made,issues opened etc., but do take care.
 
 
-This app aims at building a cryptocuurency news feed by means of the Coinlore API : https://www.coinlore.com/cryptocurrency-data-api
+This app aims at building a cryptocuurency news feed by means of the Coinlore API : https://www.coinlore.com/cryptocurrency-data-api.
+
 It also supports IPFS storage and sharing via the Kotlin IPFS API ( link provided below )
 
 This has many advantages and I highly suggest you pay a visit to : https://ipfs.io/
