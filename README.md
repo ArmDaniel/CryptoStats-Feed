@@ -1,11 +1,11 @@
-# IPFS-News-Feed
+# CryptoStats Feed
 
 <-----WARNING-----> 
 This is not stable and far from being finished. Any testing can freely be made,issues opened etc., but do take care.
 
 
-This app aims at building a news feed by means of the Hacker News API.
-Later updates will integrate IPFS as a means for storage and file sharing.
+This app aims at building a cryptocuurency news feed by means of the Coinlore API : https://www.coinlore.com/cryptocurrency-data-api
+It also supports IPFS storage and sharing via the Kotlin IPFS API ( link provided below )
 
 This has many advantages and I highly suggest you pay a visit to : https://ipfs.io/
 
@@ -18,5 +18,7 @@ All dependencies used(also specified in gradle build, if others will be added, I
 * Picasso: https://square.github.io/picasso/
 * IPFS Kotlin Api : https://github.com/ligi/ipfs-api-kotlin
 
-TODO: Fetch top stories from HN and send to news queue; Integrate IPFS for storage ( save news ) and file sharing ( allow users to write their
-own articles and publish to IPFS node ) ; Material design for app (?)
+TODO:
+
+* Add an easier sharing option of the IPFS link
+* Use material design for UI
