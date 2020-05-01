@@ -1,8 +1,10 @@
 # CryptoStats Feed
 
-<-----WARNING-----> 
+<-----WARNING----->
+
 This is not stable and far from being finished. Any testing can freely be made,issues opened etc., but do take care.
 
+When the stable version is going to be released ,I shall post a link to it here, for now, consider this as a testing ground.
 
 This app aims at building a cryptocuurency news feed by means of the Coinlore API : https://www.coinlore.com/cryptocurrency-data-api.
 
