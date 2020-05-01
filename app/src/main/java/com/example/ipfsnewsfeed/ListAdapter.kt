@@ -6,11 +6,16 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.news_row.view.*
 
-class ListAdapter : RecyclerView.Adapter<CustomViewHolder>() {
-    //push to list the titles, then make separate variable for summary
-    val newsTitles = listOf<String>("1","2")
+
+
+class ListAdapter(val homeFeed: HomeFeed) : RecyclerView.Adapter<CustomViewHolder>() {
+
+
+    //note: okhttp version 14 throws error , keep 12
+
+
     override fun getItemCount(): Int {
-        return newsTitles.size
+        return 10 //homeFeed.pairs.count()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomViewHolder {
@@ -21,8 +26,14 @@ class ListAdapter : RecyclerView.Adapter<CustomViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
-        val newsTitle = newsTitles.get(position)
-        holder?.view?.textView_newsTitle?.text = newsTitle
+
+        val newsTitle = homeFeed.data.get(position)
+        holder?.view?.textView_newsTitle?.text = newsTitle.price_usd.toString()
+
+        holder?.view?.textView_cont?.text = newsTitle.name
+
+
+
 
     }
 }
