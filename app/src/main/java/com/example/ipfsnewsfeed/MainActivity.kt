@@ -39,8 +39,7 @@ class MainActivity : AppCompatActivity() {
 
         // TODO: Try Make a single add to ipfs button such that the whole result may get added to the network + get button ( hash )
         // TODO: UI - material design - check out CodeLabs
-        // TODO: list of improvements: * decentralized database - OrbitDB * NFTs for reputation * general news adaption * more info
-        // TODO: presentation
+        // TODO: list of improvements: * decentralized database - OrbitDB * NFTs for reputation * general news adaption
 
         val button = findViewById<Button>(R.id.button)
         val multihash = InfuraIPFS().add.string("CryptoStats Test").Hash
