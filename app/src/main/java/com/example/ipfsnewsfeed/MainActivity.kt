@@ -34,13 +34,22 @@ class MainActivity : AppCompatActivity() {
 
         val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
 
+        //lazy approach - the correct solution is running on another thread
         StrictMode.setThreadPolicy(policy)
 
-        val button = findViewById<Button>(R.id.button)
-        val multihash = InfuraIPFS().add.string("test-string").Hash
-        val content = InfuraIPFS().get.cat(multihash)
+        // TODO: Try Make a single add to ipfs button such that the whole result may get added to the network + get button ( hash )
+        // TODO: UI - material design - check out CodeLabs
+        // TODO: list of improvements: * decentralized database - OrbitDB * NFTs for reputation * general news adaption * more info
+        // TODO: presentation
 
-        button?.setOnClickListener { Toast.makeText(this@MainActivity, content , Toast.LENGTH_LONG).show() }
+        val button = findViewById<Button>(R.id.button)
+        val multihash = InfuraIPFS().add.string("CryptoStats Test").Hash
+        val content = InfuraIPFS().get.cat(multihash)
+        println(content)
+
+        button?.setOnClickListener {
+            Toast.makeText(this@MainActivity, R.string.ipfs_save , Toast.LENGTH_LONG).show()
+        }
 
 
 
@@ -90,6 +99,6 @@ class MainActivity : AppCompatActivity() {
 
 class HomeFeed(val data : List<Coins>)
 
-class Coins(val price_usd: Float , val name: String)
+class Coins(val price_usd: Float , val name: String, val tsupply: Double, val market_cap_usd: Double)
 
 
