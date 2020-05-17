@@ -25,3 +25,5 @@ TODO:
 
 * Add an easier sharing option of the IPFS link
 * Use material design for UI
+* Extend to a proper decentralised News Feed
+* Use OrbitDB
