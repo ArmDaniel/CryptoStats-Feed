@@ -1,11 +1,5 @@
 # CryptoStats Feed
 
-<-----WARNING----->
-
-This is not stable and far from being finished. Any testing can freely be made,issues opened etc., but do take care.
-
-When the stable version is going to be released ,I shall post a link to it here, for now, consider this as a testing ground.
-
 This app aims at building a cryptocurrency news feed by means of the Coinlore API : https://www.coinlore.com/cryptocurrency-data-api.
 
 It also supports IPFS storage and sharing via the Kotlin IPFS API ( link provided below )
