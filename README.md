@@ -12,6 +12,8 @@ It also supports IPFS storage and sharing via the Kotlin IPFS API ( link provide
 
 This has many advantages and I highly suggest you pay a visit to : https://ipfs.io/
 
+Analyzed using [Snyk](https://snyk.io/)
+
 [![Known Vulnerabilities](https://snyk.io/test/github/Motanovici/CryptoStats-Feed/badge.svg?targetFile=app/build.gradle)](https://snyk.io/test/github/Motanovici/CryptoStats-Feed?targetFile=app/build.gradle)
 
 <--For those who only wish to quickly know what was used-->
